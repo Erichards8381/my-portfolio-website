@@ -14,7 +14,7 @@
 nav 
   display: flex
   justify-content: space-between
-  padding: 0 15%
+  padding: 0 5%
   height: 75px
   line-height: 75px
   margin-top: -1%
@@ -27,9 +27,11 @@ nav .navbar-brand
     font-weight: 500
     letter-spacing: .5px
     z-index: 2
+    margin-right:auto
 
 nav .nav-list
     display: flex
+    align-items: center
 
 nav .nav-list .nav-item
     cursor: pointer
@@ -37,11 +39,9 @@ nav .nav-list .nav-item
     padding: 0 30px
     transition: .4s
 
-nav .nav-list .nav-item:hover
-    background: $hightlight-primary-colour
     
 nav .nav-list .nav-item:hover .nav-link
-    color: $hightlight-secondary-colour
+    color: $hightlight-primary-colour
 
 nav .nav-list .nav-link
     color: $secondary-colour
@@ -49,16 +49,10 @@ nav .nav-list .nav-link
     font-weight: 500
 
 
-@media (max-width: 935px)
-    nav
-        padding: 0 2rem
 
-    nav .nav-list .nav-item
-        padding: 0 20px
-
-@media (max-width: 675px)
+@media (max-width: 930px)
     nav .nav-list
-        display: grid
+        display: none
         position: absolute
         background: $primary-colour
         width: 100%
@@ -73,6 +67,10 @@ nav .nav-list .nav-link
     
     nav .navbar-toggler
         display: grid !important
+
+@media (max-width: 400px)
+    nav .navbar-brand
+        font-size: 18px
 
 nav .navbar-toggler
     display: none
@@ -93,8 +91,10 @@ input
     display: none
 
 input:checked ~ nav .nav-list
+    display: grid
     transform: translateY(0)
     z-index: 1
+    
 
 input:checked ~ nav .navbar-toggler
     margin-top: 35px

@@ -11,12 +11,12 @@
 .intro-small-text
     color: $secondary-colour
     z-index: 0
-    font-size: 30px
+    font-size: 2em
     font-family: 'Montserrat', sans-serif
     width: 100%
     white-space: nowrap
     overflow: hidden
-    animation: typing 3.2s, cursor .4s step-end infinite alternate
+    animation: typing 2.5s, cursor .4s step-end infinite alternate
 
 /* cursor blinking */
 @keyframes cursor
@@ -33,9 +33,17 @@
 
 .intro-big-text
     color: $hightlight-primary-colour
-    font-family: 'Sedgwick Ave Display', cursive
-    font-size: 120px
+    font-family: 'Rubik Pixels', cursive
+    font-size: 5em
     z-index: 0
+    
 
 .highlight
     color: $hightlight-primary-colour
+
+@media (max-width: 930px)
+    .intro-small-text
+        font-size: 1.5em
+    
+    .intro-big-text
+        font-size: 3.5em
