@@ -1,0 +1,111 @@
+@import '../../../styles.sass'
+
+// Set global styles
+*
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  list-style: none
+  text-decoration: none
+  font-family: 'Montserrat', sans-serif
+
+// Define styles for the nav element
+nav 
+  display: flex
+  justify-content: space-between
+  padding: 0 15%
+  height: 75px
+  line-height: 75px
+  margin-top: -1%
+  background: $primary-colour
+  
+
+nav .navbar-brand
+    color: $hightlight-primary-colour
+    font-size: 28px
+    font-weight: 500
+    letter-spacing: .5px
+    z-index: 2
+
+nav .nav-list
+    display: flex
+
+nav .nav-list .nav-item
+    cursor: pointer
+    height: 100%
+    padding: 0 30px
+    transition: .4s
+
+nav .nav-list .nav-item:hover
+    background: $hightlight-primary-colour
+    
+nav .nav-list .nav-item:hover .nav-link
+    color: $hightlight-secondary-colour
+
+nav .nav-list .nav-link
+    color: $secondary-colour
+    font-size: 18px
+    font-weight: 500
+
+
+@media (max-width: 935px)
+    nav
+        padding: 0 2rem
+
+    nav .nav-list .nav-item
+        padding: 0 20px
+
+@media (max-width: 675px)
+    nav .nav-list
+        display: grid
+        position: absolute
+        background: $primary-colour
+        width: 100%
+        top: 75px
+        left: 0
+        transform: translateY(-100%)
+        z-index: -1
+        transition: .6s
+
+    nav .nav-list .nav-item
+        padding-left: 35px
+    
+    nav .navbar-toggler
+        display: grid !important
+
+nav .navbar-toggler
+    display: none
+    height: min-content
+    margin: 18px -10px 0 0
+    cursor: pointer
+
+nav .navbar-toggler .bar
+    width: 40px
+    height: 5px
+    margin-bottom: 10px
+    background: $hightlight-primary-colour
+    border-radius: 10%
+    transition: .4s
+    z-index: 2
+
+input
+    display: none
+
+input:checked ~ nav .nav-list
+    transform: translateY(0)
+    z-index: 1
+
+input:checked ~ nav .navbar-toggler
+    margin-top: 35px
+    
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1)
+    position: absolute
+    transform: rotate(45deg)
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2)
+    display: none
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3)
+    transform: rotate(-45deg)

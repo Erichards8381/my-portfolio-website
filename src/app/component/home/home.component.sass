@@ -1,0 +1,41 @@
+@import '../../../styles.sass'
+
+
+.container
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    
+    
+.intro-small-text
+    color: $secondary-colour
+    z-index: 0
+    font-size: 30px
+    font-family: 'Montserrat', sans-serif
+    width: 100%
+    white-space: nowrap
+    overflow: hidden
+    animation: typing 3.2s, cursor .4s step-end infinite alternate
+
+/* cursor blinking */
+@keyframes cursor
+    50%
+        border-color: transparent
+
+/* typing effect */
+@keyframes typing
+    from
+        width: 0
+
+.right
+    text-align: right
+
+.intro-big-text
+    color: $hightlight-primary-colour
+    font-family: 'Sedgwick Ave Display', cursive
+    font-size: 120px
+    z-index: 0
+
+.highlight
+    color: $hightlight-primary-colour
