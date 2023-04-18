@@ -4,7 +4,7 @@
     font-family: 'Montserrat', sans-serif
     
 .education-card
-    width: 600px
+    width: 80%
     display: flex
     align-items: center
     justify-content: center
@@ -14,7 +14,8 @@
     background: $primary-colour
 
 .education-image img
-    width: 150px
+    //width: 12vw
+    width: clamp(40px, 12vw, 140px)
     border-radius: 10px
     margin-right: 15px
     
@@ -22,15 +23,19 @@
 .education-card-content h1
     color: $hightlight-primary-colour
     margin: 0 0 5px 0
+    //font-size: 5vw
+    font-size: clamp(19px, 5vw, 40px)
 
 .education-card-content h2
     color: $secondary-colour
-    font-size: 1.4em
+    //font-size: 2.5vw
+    font-size: clamp(15px, 2.5vw, 30px)
     margin: 0 0 5px 0
 
 .education-card-content h3
     color: $secondary-colour
-    font-size: 1em
+    //font-size: 1.85vw
+    font-size: clamp(11px, 1.85vw, 20px)
     margin: 0
 
 .education-card-content h1, .education-card-content h2, .education-card-content h3
@@ -73,8 +78,7 @@ table tr:nth-child(even)
     background: $secondary-colour  
 
 table tr:nth-child(even) td
-    color: $primary-colour
-    
+    color: $primary-colour  
 
 td
     color: $secondary-colour
@@ -87,7 +91,7 @@ td
 
 .col-2
     width: 100%
-    text-align: right
+    text-align: center
 
 .data
     font-size: 1.5em
@@ -107,32 +111,61 @@ td
   width: 100%
   height: 100%
   overflow: auto
-  background-color: rgba(0, 0, 0, 0.4)
+  background-color: rgba(0, 0, 0, .75)
 
 .modal-content
-  background-color: #fefefe
+  background-color: $primary-colour
   margin: 15% auto
   padding: 20px
-  border: 1px solid #888
-  width: 80%
+  border: 1px solid $hightlight-primary-colour
+  border-radius: 5px
+  width: 50%
 
+.modal-content h2 
+    color: $hightlight-primary-colour
+    font-size: clamp(16px, 2.8vw, 30px)
+
+.modal-content p
+    color: $secondary-colour
+    font-size: clamp(12px, 1.5vw, 18px)
 
 .close
-  color: #aaa
+  color: $hightlight-primary-colour
   float: right
   font-size: 28px
   font-weight: bold
 
 .close:hover,
 .close:focus
-  color: black
+  color: white
   text-decoration: none
   cursor: pointer   
+
+.course-stats-list
+    list-style: none
+    display: flex
+    padding-left: 0
+    padding-right: 10px  
+    justify-content: space-around
+    color: $hightlight-primary-colour
+    font-weight: bold
+    font-size: clamp(12px, 1.5vw, 17px) 
+           
 
 @media (min-width: 1500px)
     .grades-container
         width: 35%
 
+@media ( max-width:  1300px)
+    .course-stats-list-container
+        text-align: center
+
+    .course-stats-list
+        display: inline-block
+        text-align: left
+
 @media (max-width: 800px)
     .grades-container
         width: 80%
+
+    
