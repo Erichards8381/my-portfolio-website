@@ -9,27 +9,25 @@
     </div>  
 </div>
 <div class="grades-container" *ngFor="let data of jsonData">    
-    <div class="level">
+    <div class="level" (click)="toggleLevel(data)">
         <h1>
-            {{data.level}}
+            <ul class="level-toggle">
+                <li>{{data.level}}</li>
+                <li [ngClass]="{'collapsed': !data.isExpanded, 'expanded': data.isExpanded}"></li>
+            </ul>
+            
         </h1>
     </div>
-    <div class="courses-level-wrapper">
+    <div class="courses-level-wrapper" [hidden]="!data.isExpanded">
         <table>
-            <thead>
-                <tr>
-                    <th class="col-1 header">COURSE</th>
-                    <th class="col-2 header">GRADE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <div *ngFor="let course of data.courses">
-                    <tr class="clickable" (click)="onCourseClick(course.description)">                        
-                        <td class="col-1 data">{{course.name}}</td>
-                        <td class="col-2 data">{{course.numeric_grade}}</td>
-                    </tr>
-                </div>
-            </tbody>            
+            <tr>
+                <th class="col-1 header">COURSE</th>
+                <th class="col-2 header">GRADE</th>
+            </tr>
+                <tr class="clickable" *ngFor="let course of data.courses" (click)="onCourseClick(course.description)">                        
+                    <td class="col-1 data"><i>{{course.name}}</i></td>
+                    <td class="col-2 data"><i>{{course.numeric_grade}}</i></td>
+                </tr>        
         </table> 
         
     </div>

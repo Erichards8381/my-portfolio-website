@@ -16,6 +16,7 @@
 .education-image img
     width: 150px
     border-radius: 10px
+    margin-right: 15px
     
 
 .education-card-content h1
@@ -36,7 +37,7 @@
     padding-left: 10px
 
 .grades-container
-    width: 600px
+    width: 50%
     margin: auto
     
 
@@ -45,15 +46,40 @@
     background: $hightlight-primary-colour
     border-radius: 3px
 
+.level-toggle
+    list-style: none
+    display: flex
+    padding-left: 0
+    padding-right: 10px  
+    justify-content: space-between
+    cursor: pointer
+
+.level-toggle li.collapsed::after
+  content: "+"
+
+.level-toggle li.expanded::after
+  content: "-"
+
 .courses-level-wrapper
     color: $hightlight-primary-colour
     width: 100%
     
 table
     width: 100%
+    border: 2px solid $hightlight-primary-colour
+    border-radius: 5px
+
+table tr:nth-child(even)
+    background: $secondary-colour  
+
+table tr:nth-child(even) td
+    color: $primary-colour
     
-thead, td
+
+td
     color: $secondary-colour
+    padding: 5px
+    font-weight: bold
     
 .col-1
     width: 100%
@@ -71,3 +97,11 @@ thead, td
 
 .clickable
     cursor: pointer
+    
+@media (min-width: 1500px)
+    .grades-container
+        width: 35%
+
+@media (max-width: 800px)
+    .grades-container
+        width: 80%

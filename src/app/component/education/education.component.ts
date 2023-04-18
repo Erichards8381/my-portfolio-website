@@ -21,4 +21,8 @@ export class EducationComponent {
   onCourseClick(description: string){
     console.log(description)
   }
+
+  toggleLevel(data: any) {
+    data.isExpanded = !data.isExpanded;
+}
 }
