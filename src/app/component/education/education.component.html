@@ -24,13 +24,18 @@
                 <th class="col-1 header">COURSE</th>
                 <th class="col-2 header">GRADE</th>
             </tr>
-                <tr class="clickable" *ngFor="let course of data.courses" (click)="onCourseClick(course.description)">                        
-                    <td class="col-1 data"><i>{{course.name}}</i></td>
-                    <td class="col-2 data"><i>{{course.numeric_grade}}</i></td>
-                </tr>        
-        </table> 
-        
+            <tr class="clickable" *ngFor="let course of data.courses" (click)="onCourseClick(course.description)">                        
+                <td class="col-1 data"><i>{{course.name}}</i></td>
+                <td class="col-2 data"><i>{{course.numeric_grade}}</i></td>                
+            </tr>
+
+        </table>         
+    </div>   
+</div>
+<div class="modal" [ngStyle]="{'display': showModal ? 'block' : 'none'}">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <p>{{description}}</p>
     </div>
-    
 </div>  
 
