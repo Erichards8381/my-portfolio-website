@@ -2,7 +2,7 @@
 
 *
     font-family: 'Montserrat', sans-serif
-    
+
 .education-card
     width: 80%
     display: flex
@@ -18,7 +18,6 @@
     width: clamp(40px, 12vw, 140px)
     border-radius: 10px
     margin-right: 15px
-    
 
 .education-card-content h1
     color: $hightlight-primary-colour
@@ -44,7 +43,6 @@
 .grades-container
     width: 50%
     margin: auto
-    
 
 .level
     color: $primary-colour
@@ -55,36 +53,36 @@
     list-style: none
     display: flex
     padding-left: 0
-    padding-right: 10px  
+    padding-right: 10px
     justify-content: space-between
     cursor: pointer
 
 .level-toggle li.collapsed::after
-  content: "+"
+    content: "+"
 
 .level-toggle li.expanded::after
-  content: "-"
+    content: "-"
 
 .courses-level-wrapper
     color: $hightlight-primary-colour
     width: 100%
-    
+
 table
     width: 100%
     border: 2px solid $hightlight-primary-colour
     border-radius: 5px
 
 table tr:nth-child(even)
-    background: $secondary-colour  
+    background: $secondary-colour
 
 table tr:nth-child(even) td
-    color: $primary-colour  
+    color: $primary-colour
 
 td
     color: $secondary-colour
     padding: 5px
     font-weight: bold
-    
+
 .col-1
     width: 100%
     text-align: left
@@ -103,25 +101,25 @@ td
     cursor: pointer
 
 .modal
-  display: none
-  position: fixed
-  z-index: 100
-  left: 0
-  top: 0
-  width: 100%
-  height: 100%
-  overflow: auto
-  background-color: rgba(0, 0, 0, .75)
+    display: none
+    position: fixed
+    z-index: 100
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: rgba(0, 0, 0, .75)
 
 .modal-content
-  background-color: $primary-colour
-  margin: 15% auto
-  padding: 20px
-  border: 1px solid $hightlight-primary-colour
-  border-radius: 5px
-  width: 50%
+    background-color: $primary-colour
+    margin: 15% auto
+    padding: 20px
+    border: 1px solid $hightlight-primary-colour
+    border-radius: 5px
+    width: 50%
 
-.modal-content h2 
+.modal-content h2
     color: $hightlight-primary-colour
     font-size: clamp(16px, 2.8vw, 30px)
 
@@ -130,27 +128,26 @@ td
     font-size: clamp(12px, 1.5vw, 18px)
 
 .close
-  color: $hightlight-primary-colour
-  float: right
-  font-size: 28px
-  font-weight: bold
+    color: $hightlight-primary-colour
+    float: right
+    font-size: 28px
+    font-weight: bold
 
 .close:hover,
 .close:focus
-  color: white
-  text-decoration: none
-  cursor: pointer   
+    color: white
+    text-decoration: none
+    cursor: pointer
 
 .course-stats-list
     list-style: none
     display: flex
     padding-left: 0
-    padding-right: 10px  
+    padding-right: 10px
     justify-content: space-around
     color: $hightlight-primary-colour
     font-weight: bold
-    font-size: clamp(12px, 1.5vw, 17px) 
-           
+    font-size: clamp(12px, 1.5vw, 17px)
 
 @media (min-width: 1500px)
     .grades-container
@@ -167,5 +164,3 @@ td
 @media (max-width: 800px)
     .grades-container
         width: 80%
-
-    
