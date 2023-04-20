@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import {HttpClient} from '@angular/common/http'
 
 @Component({
   selector: 'app-skills',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.sass']
 })
 export class SkillsComponent {
+  skills: any;
 
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(){
+    this.http.get<any>('../../../assets/data/skills.json').subscribe(data => {
+      this.skills = data; 
+    })
+  }
 }

@@ -2,33 +2,67 @@
     "frameworks": [
         {
             "name": ".NET Framework",
-            "icon_path": "",
+            "icon_path": "../../../assets/icons/NET-Framework-Logo.png",
             "experience": "I have been using the .NET framework for a couple of years now and would say it's the framework I am the most familiar with.  I have developed several programs using the .NET framework including console applications, WPF apps, a WCF app and a couple ASP.NET apps. I have also used the Entity Framework and LINQ to assit in creating some of my .NET applications."
         },
         {
             "name": "Angular",
-            "icon_path": "",
+            "icon_path": "../../../assets/icons/angular-logo.png",
             "experience": "I used the discontinued version of Angular, Angular JS,  for the front end of my capstone project at the request of my groups industry partner.  Having to use the older version of Angular made me want to try out the newer version as during my research for my capstone, most of the tutorials used the newer version. It looked like a far better developer experience so I made the website you're currently reading this on with Angular. I have enjoyed using Angular far more than using Angular JS.  Getting to use the CLI and having typescript available has felt like a more modern experience with less headaches.  I also prefer the Angular file structure. As a new user, it's easier to get up and running and keep everything organized."
         },
         {
             "name": "Express JS",
-            "icon_path": "",
+            "icon_path": "../../../assets/icons/express-logo.png",
             "experience": "In my second year of school I wanted to learn a tech stack over the winter break.  I discovered the MEARN stack was fairly popular.  I ended up working on a CRUD type web app to teach myself.  During the process I used Express to handle the routing and to make requests to MongoDB.  Later on, during my capstone project, I used express as middleware to make queries on the database and to make requests to Grafana's API enabling the user to update embeded data visualizations."
         },
         {
             "name": "Ruby on Rails",
-            "icon_path": "",
+            "icon_path": "../../../assets/icons/ruby-on-rails-logo.png",
             "experience": "During the network applications and development course I took at Conestoga College, I followed and completed the entire book/screen cast series titled 'Ruby on Rails Tutorial: Learn Web Development with Rails' by Michael Hartl.  During the tutorial, I created a number of applications with the final application being a more substantial twitter type clone.  The clone had automated tests, user signup/login, account management and image uploading which was stored in an S3 bucket.  Additionally, the project was deployed using Heroku."
-        }
-    ],
-    "markup_languages": [
-        {
-
         }
     ],
     "languages": [
         {
-
+            "name": "",
+            "icon_path": "",
+            "experience": ""
+        },
+        {
+            "name": "",
+            "icon_path": "",
+            "experience": ""
+        },
+        {
+            "name": "",
+            "icon_path": "",
+            "experience": ""
+        },
+        {
+            "name": "",
+            "icon_path": "",
+            "experience": ""
+        },
+        {
+            "name": "",
+            "icon_path": "",
+            "experience": ""
+        }
+    ],
+    "databases":[
+        {
+            "name": "SQL Server",
+            "icon_path": "",
+            "experience": "During my Advanced SQL course at Conestoga College, I had a number of assignments that used SQL Server, the most notable of these assignments was my term project.  I used SQL Server to handle the data being created and read in my suite of desktop applications designed to simulate, configure and visualize an assembly line producing fog lights for cars in real time.  My SQL Server database used stored procedures, functions, triggers and a job to support the various functionalities of the simulation."
+        },
+        {
+            "name": "MySQL",
+            "icon_path": "",
+            "experience": "In my relational database course at Conestoga College, I used MySQL to familarize myself with the fundamental concepts of relational databases.  Later on in my capstone project, I used MySQL Workbench to create, read and update the data generated in the project.  The data was several GBs in size and required appropriate indexes to optimize return times on large SELECT queries."
+        },
+        {
+            "name": "MongoDB",
+            "icon_path": "",
+            "experience": "I learned the basics of MongoDB and Mongo Atlas when I taught myself the MERN stack.  Later on in my advanced tech topics course, I had an assignment that required me to use MongoDB to create and query collections."
         }
     ],
     "data_visualization_tools":[
@@ -50,7 +84,7 @@
         {
             "name": "MS Charts",
             "icon_path": "",
-            "experience": "During my business intelligence course at Conestoga College, I used MS charts, a .NET library for a handful of assignments.  It gave me an appreciation for the power of data visualization tools such as Tableau and Grafana as writing C# code to make simple charts is far slower than using a GUI to connect to a datasource and populate aesthetically pleasing graphs.d"
+            "experience": "During my business intelligence course at Conestoga College, I used MS charts, a .NET library for a handful of assignments.  It gave me an appreciation for the power of data visualization tools such as Tableau and Grafana as writing C# code to make simple charts is far slower than using a GUI to connect to a datasource and populate aesthetically pleasing graphs."
         }
     ],
     "cloud_computing":[
