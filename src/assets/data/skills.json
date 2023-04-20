@@ -3,7 +3,7 @@
         {
             "name": ".NET Framework",
             "icon_path": "../../../assets/icons/NET-Framework-Logo.png",
-            "experience": "I have been using the .NET framework for a couple of years now and would say it's the framework I am the most familiar with.  I have developed several programs using the .NET framework including console applications, WPF apps, a WCF app and a couple ASP.NET apps. I have also used the Entity Framework and LINQ to assit in creating some of my .NET applications."
+            "experience": "I have been using the .NET framework for a couple of years now and would say it's the framework I am the most familiar with.  I have developed several programs using the .NET framework including console applications, WPF apps, a WCF app and a couple ASP.NET apps. I have also used the Entity Framework and LINQ to assist in creating some of my .NET applications."
         },
         {
             "name": "Angular",

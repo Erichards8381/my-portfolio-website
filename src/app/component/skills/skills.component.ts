@@ -8,6 +8,7 @@ import {HttpClient} from '@angular/common/http'
 })
 export class SkillsComponent {
   skills: any;
+  selectedItem: any;
 
   constructor(private http: HttpClient) {}
 
@@ -16,4 +17,9 @@ export class SkillsComponent {
       this.skills = data; 
     })
   }
+
+  imageOnClick(item: any) {
+    this.selectedItem = item;
+  }
+
 }

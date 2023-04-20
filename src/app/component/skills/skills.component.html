@@ -14,10 +14,12 @@
     <div class="skills-container">
         <ul class="skills-list">
             <li class="skills-list-item" *ngFor="let framework of skills.frameworks">
-            
-                <img class="skill-image" [src]="framework.icon_path" alt="{{framework.name}}"/>
+                <div class="test-container">
+                    <img class="skill-image" [src]="framework.icon_path" alt="{{framework.name}}" (click)="imageOnClick(framework)" [style.opacity]="selectedItem === framework ? '0' : '1'"/>
+                    <h3 class="skill-experience" *ngIf="selectedItem === framework" [style.opacity]="selectedItem === framework ? '1' : '0'">{{framework.experience}}</h3>
+                </div>
+                
                 <h1>{{framework.name}}</h1>            
-                <!--<h3>{{framework.experience}}</h3>-->
             </li>
         </ul>
         
