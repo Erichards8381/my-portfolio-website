@@ -8,7 +8,10 @@ import {HttpClient} from '@angular/common/http'
 })
 export class SkillsComponent {
   skills: any;
-  selectedItem: any;
+  iconPath = "";
+  name = "";
+  experience = "";
+  showModal = false;
 
   constructor(private http: HttpClient) {}
 
@@ -18,8 +21,14 @@ export class SkillsComponent {
     })
   }
 
-  imageOnClick(item: any) {
-    this.selectedItem = item;
+  onSkillClick(iconPath: string, name: string, experience: string) {
+    this.iconPath = iconPath
+    this.name = name
+    this.experience = experience
+    this.showModal = true
   }
 
+  closeModal() {
+    this.showModal = false
+  }
 }

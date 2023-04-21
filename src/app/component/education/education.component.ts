@@ -28,7 +28,6 @@ export class EducationComponent implements OnInit{
   }
 
   onCourseClick(description: string, name: string, code:string, hours:number, credits:number, numeric_grade:number, alpha_grade:string, grade_point:number){
-    console.log(description)
     this.description = description
     this.name = name
     this.code = code

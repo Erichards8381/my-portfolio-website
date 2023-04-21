@@ -15,13 +15,69 @@
         <ul class="skills-list">
             <li class="skills-list-item" *ngFor="let framework of skills.frameworks">
                 <div class="test-container">
-                    <img class="skill-image" [src]="framework.icon_path" alt="{{framework.name}}" (click)="imageOnClick(framework)" [style.opacity]="selectedItem === framework ? '0' : '1'"/>
-                    <h3 class="skill-experience" *ngIf="selectedItem === framework" [style.opacity]="selectedItem === framework ? '1' : '0'">{{framework.experience}}</h3>
-                </div>
-                
+                    <img class="skill-image" [src]="framework.icon_path" alt="{{framework.name}}" (click)="onSkillClick(framework.icon_path, framework.name, framework.experience)">
+                    <!--<h3 class="skill-experience">{{framework.experience}}</h3>-->
+                </div>               
                 <h1>{{framework.name}}</h1>            
             </li>
-        </ul>
-        
+        </ul>        
+    </div>
+
+    <div class="skills-title-container">
+        <h1 class="skills-title">DATABASES</h1>
+    </div>
+    <div class="skills-container">
+        <ul class="skills-list">
+            <li class="skills-list-item" *ngFor="let database of skills.databases">
+                <div class="test-container">
+                    <img class="skill-image" [src]="database.icon_path" alt="{{database.name}}" (click)="onSkillClick(database.icon_path, database.name, database.experience)">
+                    <!--<h3 class="skill-experience">{{framework.experience}}</h3>-->
+                </div>               
+                <h1>{{database.name}}</h1>            
+            </li>
+        </ul>        
+    </div>
+
+    <div class="skills-title-container">
+        <h1 class="skills-title">DATA VISUALIZATION TOOLS</h1>
+    </div>
+    <div class="skills-container">
+        <ul class="skills-list">
+            <li class="skills-list-item" *ngFor="let data_visualization_tool of skills.data_visualization_tools">
+                <div class="test-container">
+                    <img class="skill-image" [src]="data_visualization_tool.icon_path" alt="{{data_visualization_tool.name}}" (click)="onSkillClick(data_visualization_tool.icon_path, data_visualization_tool.name, data_visualization_tool.experience)">
+                    <!--<h3 class="skill-experience">{{framework.experience}}</h3>-->
+                </div>               
+                <h1>{{data_visualization_tool.name}}</h1>            
+            </li>
+        </ul>        
+    </div>
+
+    <div class="skills-title-container">
+        <h1 class="skills-title">CLOUD COMPUTING</h1>
+    </div>
+    <div class="skills-container">
+        <ul class="skills-list">
+            <li class="skills-list-item" *ngFor="let cloud of skills.cloud_computing">
+                <div class="test-container">
+                    <img class="skill-image" [src]="cloud.icon_path" alt="{{cloud.name}}" (click)="onSkillClick(cloud.icon_path, cloud.name, cloud.experience)">
+                    <!--<h3 class="skill-experience">{{framework.experience}}</h3>-->
+                </div>               
+                <h1>{{cloud.name}}</h1>            
+            </li>
+        </ul>        
     </div>
 </div>
+
+<div class="modal" [ngStyle]="{'display': showModal ? 'block' : 'none'}">
+    <div class="modal-content">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <div class="modal-header-line">
+            <img class="modal-image" [src]="iconPath"/>
+            <h2>{{name}}</h2>
+        </div>
+            
+        
+        <p>{{experience}}</p>
+    </div>
+</div>  

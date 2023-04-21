@@ -28,17 +28,20 @@ p
     list-style: none
     display: flex
     flex-wrap: wrap
-    margin: 10 auto
     justify-content: center
+    padding: 0
 
 .skills-list-item
-    width: 25%
+    width: 20%
     text-align: center
-    margin: 0px 0 100px 0
+    margin: 50px 0px 50px 0px
+    padding-left: 5px
+    padding-right: 5px
 
 .skills-list-item h1
-    color: $hightlight-primary-colour
-    font-size: clamp(12px, 5vw, 24px)
+    color: $secondary-colour
+    font-weight: bolder
+    font-size: clamp(12px, 4vw, 24px)
     overflow-wrap: break-word
     hyphens: auto
     margin-top: 20px
@@ -46,7 +49,8 @@ p
 .skills-title
     font-size: clamp(24px, 3vw, 42px)
     font-weight: bolder
-    color: $hightlight-primary-colour
+    color: $primary-colour
+    background: $hightlight-primary-colour
 
 .skill-image
     width: 80%
@@ -57,27 +61,55 @@ p
     margin: 0 auto
     cursor: pointer
     
-//li:hover .skill-image
-    //animation: spin .5s
-    //animation-timing-function: linear
-    //animation-iteration-count: 1
-
-@keyframes spin
-    0%
-        opacity: 1
-    100%
-        opacity: 0
-
-.skill-experience
-    position: absolute
-    top: 0
+.modal
+    display: none
+    position: fixed
+    z-index: 100
     left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: rgba(0, 0, 0, .75)
+
+.modal-content
+    background-color: $primary-colour
+    margin: 15% auto
+    padding: 20px
+    border-radius: 5px
+    width: 50%
+
+.modal-image
+    width: 15%
+    border-radius: 5px
+    display: inline-block
+    vertical-align: middle
+    margin-right: 20px 
+
+.close
+    color: $hightlight-primary-colour
+    float: right
+    font-size: clamp(18px, 5vw, 32px)
+    font-weight: bold
+
+.close:hover,
+.close:focus
     color: $secondary-colour
-    margin: 20px
-    max-height: 80%
+    text-decoration: none
+    cursor: pointer
 
-.test-container
-    position: relative
-    justify-content: center
+.modal-content h2
+    color: $hightlight-primary-colour
+    font-size: clamp(16px, 3.5vw, 32px)
+    display: inline-block
+    margin: 0
+    padding: 0
+    vertical-align: middle  
 
+.modal-content p
+    font-size: clamp(12px, 1.5vw, 18px)    
 
+.modal-header-line
+    display: block
+    margin: 0
+    padding: 0
