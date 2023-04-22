@@ -14,7 +14,7 @@ p
     color: $secondary-colour
 
 .skills-wrapper
-    width: 90%
+    width: 100%
     margin: 0 auto
     text-align: center
 
@@ -51,6 +51,8 @@ p
     font-weight: bolder
     color: $primary-colour
     background: $hightlight-primary-colour
+    height: 100%
+
 
 .skill-image
     width: 80%
@@ -60,7 +62,11 @@ p
     display: block
     margin: 0 auto
     cursor: pointer
-    
+
+@media ( max-width:  1600px)
+    .skills-list-item
+        width: 30%
+
 .modal
     display: none
     position: fixed

@@ -23,30 +23,92 @@
     ],
     "languages": [
         {
-            "name": "",
-            "icon_path": "",
-            "experience": ""
+            "name": "C#",
+            "icon_path": "../../../assets/icons/csharp-logo.png",
+            "experience": "I first used C# during my third semester at Conestoga College.  After that, it became the primary language I used as many of the assignments required it.  As such, I feel the most comfortable using C#.  I like that it doesn't have the pitfalls of memory management the way C and C++ do.  I also find it to feel more structured than a higher level language like python which is nice depending on the use case."
         },
         {
-            "name": "",
-            "icon_path": "",
-            "experience": ""
+            "name": "C++",
+            "icon_path": "../../../assets/icons/c-plus-plus-logo.png",
+            "experience": "I use C++ interchangeably with C as I prefer C's syntax but C++ does have the STL which can really increase productivity. Part of my data structures course was using C++ to implement common data structures like linked lists and doubley linked lists."
         },
         {
-            "name": "",
-            "icon_path": "",
-            "experience": ""
+            "name": "C",
+            "icon_path": "../../../assets/icons/c-logo.png",
+            "experience": "C is the first programming language I learned.  Before attending Conestoga College, I had zero programming experience.  To prepare myself for my program, I followed a couple of the CS50 lectures that Harvard offers for free.  I then expanded on my knowledge of the language and the fundamentals of programming during my C/C++ programming course.  At first it felt like doing anything took forever because arrays and pointers hadn't clicked yet.  Eventually, it all made sense and I really got to like the language.  In my systems programming course, I developed more complex series of programs.  For example, I made a multi-threaded chat server using C and ncurses. I familirized myself with concepts like shared memory, semaphores, mutexes, threads and more.  In my micro"
         },
         {
-            "name": "",
-            "icon_path": "",
-            "experience": ""
+            "name": "Python",
+            "icon_path": "../../../assets/icons/python-logo.png",
+            "experience": "Python is great.  I typically use python any time I want to make something quickly or any time I need manipulate a web page.  For example, during covid my gym implemented an hourly time slot sign up system.  Getting a time slot was a pain, new slots would open up at midnight 3 days before the actual time of the slot.  They'd be gone in minutes forcing you to set an alarm and manually sign up and deal with the gym's servers not being able to handle all the traffic.  That's when a light bulb went off, I decided to automate the sign up process using python and selenium. I made a GUI based application with the intentions of sharing it with my friends in the same boat.  Unfortunately, my gym got the green light to allow more people in the gym a couple days after I made the app rendering it useless."
         },
         {
-            "name": "",
-            "icon_path": "",
-            "experience": ""
+            "name": "SQL",
+            "icon_path": "../../../assets/icons/sql-logo.png",
+            "experience": "I have used SQL for a wide variety of assignments during my time at Conestoga College.  The entire advanced SQL course revolved around it.  The business intelligence course used SQL as well.  Additionally, I designed and created a MySQL database for my capstone project that could easily handle several gigabytes of data by using appropriate indexes and normalization."
+        },
+        {
+            "name": "T-SQL",
+            "icon_path": "../../../assets/icons/tsql-logo.png",
+            "experience": "I used T-SQL in my advanced SQL course a fair bit as I had to program many stored procedures, functions, triggers and even a job for the term project.  The syntax feels a bit dated but I enjoy that it allows you to do a bit of programming from within a database, simplifying middleware/code-behind as you can directly call a stored procedure or have a trigger take care of some functionality."
+        },
+        {
+            "name": "Java",
+            "icon_path": "../../../assets/icons/java-logo.png",
+            "experience": "I have used java to create mobile applications during the mobile applications course at Conestoga College.  Additionally, I used processing's implementation of java in my graphics, animation and sound course to complete a variety of labs and assignments.  Two assignments stick out to me when thinking back on that course, the ms paint like program I created but without the ability of using UI libraries and the solar system simulation that allowed the users to configure aspects of the simulation such as the number of planets in orbit, which planets have moons and other size related variables."
+        },
+        {
+            "name": "Swift",
+            "icon_path": "../../../assets/icons/swift-logo.png",
+            "experience": "During my mobile application 2 course, I completed a number of labs which familirized me with Xcode and Swift.  The labs in the course mostly involved following tutorials so I would say I am a beginner with the language."
+        },
+        {
+            "name": "VBA",
+            "icon_path": "../../../assets/icons/vba-logo.png",
+            "experience": "I have used VBA to manipulate excel spreadsheets for a couple of assignments in my operating system fundamentals course."
+        },
+        {
+            "name": "HTML",
+            "icon_path": "../../../assets/icons/html-logo.png",
+            "experience": "I've been using HTML for a couple of years now.  My first introduction to HTML was in my web design and development course at Conestoga College.  I learned about different elements like forms, inputs and divs.  I also learned about client and server side rendering."
+        },
+        {
+            "name": "CSS",
+            "icon_path": "../../../assets/icons/css-logo.png",
+            "experience": "I've been using CSS on and off for a couple of years now.  I started used CSS during my web design and development course.  At first, I found it to be the worst part of web development.  I was new to creating UI as I had really only made console application type programs up untill that point.  I found it very difficult to do what I wanted to using CSS at first.  However, I would tinker with the canvas html element to make little games or to make unimpressive animations which got me into using CSS a bit more.  As a result, I found myself being able to do what I wanted with CSS.  I am definitely not an expert in CSS (or design for that matter) but I can create and style a website."
+        },
+        {
+            "name": "JavaScript",
+            "icon_path": "../../../assets/icons/js-logo.png",
+            "experience": "During my web design and development course, I used javascript a fair bit.  I have also used it on my own time to tinker around with the canvas HTML element.  I have created the game of life and made a rain background animation just to name a couple of small projects I have completed using javascript.  I have also used express which is a javascript library to create middleware that made API calls and queried databases.  Additionally, I have used the javascript library react to make a CRUD type web application."
+        },
+        {
+            "name": "TypeScript",
+            "icon_path": "../../../assets/icons/typescript-logo.png",
+            "experience": "I am new to TypeScript as I first started using it a few months ago during my capstone project.  It is very similar to javascript so I feel at home using it.  I used typescript for some parts of the website you're currently on!"
+        },
+        {
+            "name": "XAML",
+            "icon_path": "../../../assets/icons/xaml-logo.png",
+            "experience": "I have used XAML to make many responsive WPF apps across several of the courses I took at Conestoga College.  I have an easier time making UI in XAML than I do with CSS and HTML.  One of XAML's features I like is the grid that XAML uses.  Defining rows and columns in a grid to position controls feels faster to me than styling HTML using CSS.  I also enjoy creating custom user controls.  It feels similar to components in web frameworks."
+        },
+        {
+            "name": "PHP",
+            "icon_path": "../../../assets/icons/php-logo.png",
+            "experience": "I am a beginner when it comes to PHP.  I have used it in a couple of assignments for my web design and development course at Conestoga College.  I remember using it to read files in a directory and return the contents to the client."
+        },
+        {
+            "name": "XML",
+            "icon_path": "../../../assets/icons/xml-logo.png",
+            "experience": "I have used XML to read large files.  For an assignment in my business intelligence course, I extracted data from an XML file that was several gigabytes in size.  It was too large to open using a basic text editor so I parsed the file in order to transform its' contents so that I could load the parts I was interested in to a SQL Server database."
+        },
+        {
+            "name": "Dart",
+            "icon_path": "../../../assets/icons/dart-logo.png",
+            "experience": "For my advanced tech topics course at Conestoga College, I had to deliver a 20 minute presentation on Flutter.  Naturally, I messed around with dart, flutter's language of choice during my research.  I am a beginner with the language as I mainly tested out some of its' features like mixins, named/optional/positional parameters and cascade notation."
         }
+        
+
     ],
     "databases":[
         {
@@ -100,7 +162,7 @@
         },
         {
             "name": "Google Cloud",
-            "icon_path": "",
+            "icon_path": "../../../assets/icons/google-cloud-logo.png",
             "experience": "I used Google Cloud to configure OAuth 2.0 during my capstone project ensuring only a predefined set of users could access our website."
         }
     ]

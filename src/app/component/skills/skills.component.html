@@ -1,3 +1,4 @@
+<!--
 <div class="skills-intro-container">
     <p>
         Over the course of my advanced diploma at Conestoga College and through my free time, I have learned a variety of skills!  
@@ -6,8 +7,22 @@
         Please click on the skills below to read about my experiences with them!
     </p>
 </div>
-
+-->
 <div class="skills-wrapper">
+    <div class="skills-title-container">
+        <h1 class="skills-title">LANGUAGES</h1>
+    </div>
+    <div class="skills-container">
+        <ul class="skills-list">
+            <li class="skills-list-item" *ngFor="let language of skills.languages">
+                <div class="test-container">
+                    <img class="skill-image" [src]="language.icon_path" alt="{{language.name}}" (click)="onSkillClick(language.icon_path, language.name, language.experience)">
+                </div>               
+                <h1>{{language.name}}</h1>            
+            </li>
+        </ul>        
+    </div>
+
     <div class="skills-title-container">
         <h1 class="skills-title">FRAMEWORKS</h1>
     </div>
@@ -16,7 +31,6 @@
             <li class="skills-list-item" *ngFor="let framework of skills.frameworks">
                 <div class="test-container">
                     <img class="skill-image" [src]="framework.icon_path" alt="{{framework.name}}" (click)="onSkillClick(framework.icon_path, framework.name, framework.experience)">
-                    <!--<h3 class="skill-experience">{{framework.experience}}</h3>-->
                 </div>               
                 <h1>{{framework.name}}</h1>            
             </li>
@@ -31,7 +45,6 @@
             <li class="skills-list-item" *ngFor="let database of skills.databases">
                 <div class="test-container">
                     <img class="skill-image" [src]="database.icon_path" alt="{{database.name}}" (click)="onSkillClick(database.icon_path, database.name, database.experience)">
-                    <!--<h3 class="skill-experience">{{framework.experience}}</h3>-->
                 </div>               
                 <h1>{{database.name}}</h1>            
             </li>
@@ -46,7 +59,6 @@
             <li class="skills-list-item" *ngFor="let data_visualization_tool of skills.data_visualization_tools">
                 <div class="test-container">
                     <img class="skill-image" [src]="data_visualization_tool.icon_path" alt="{{data_visualization_tool.name}}" (click)="onSkillClick(data_visualization_tool.icon_path, data_visualization_tool.name, data_visualization_tool.experience)">
-                    <!--<h3 class="skill-experience">{{framework.experience}}</h3>-->
                 </div>               
                 <h1>{{data_visualization_tool.name}}</h1>            
             </li>
@@ -61,7 +73,6 @@
             <li class="skills-list-item" *ngFor="let cloud of skills.cloud_computing">
                 <div class="test-container">
                     <img class="skill-image" [src]="cloud.icon_path" alt="{{cloud.name}}" (click)="onSkillClick(cloud.icon_path, cloud.name, cloud.experience)">
-                    <!--<h3 class="skill-experience">{{framework.experience}}</h3>-->
                 </div>               
                 <h1>{{cloud.name}}</h1>            
             </li>
