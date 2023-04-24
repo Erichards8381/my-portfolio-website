@@ -1,0 +1,101 @@
+@import '../../../styles.sass'
+
+.projects-wrapper
+  display: flex
+  flex-wrap: wrap
+  width: 90%
+  margin: 0 auto
+
+
+.project-container
+  display: flex
+  width: 100%
+  flex-wrap: wrap
+  align-items: center
+  margin-bottom: 300px
+
+.project-container:nth-child(1)
+    margin-top: 200px
+
+.project-text-section 
+  flex-basis: 50%
+
+
+.project-image-section 
+  flex-basis: 50%
+  text-align: center
+
+
+.project-gif 
+  max-width: 100%
+  height: auto
+  border-radius: clamp(5px, 1vw, 30px)
+
+
+h1
+    color: $hightlight-primary-colour
+    font-size: clamp(18px, 5vw, 40px)
+
+.tech-stack-list
+    margin: 0
+    padding: 0
+    width: 70%
+    list-style: none
+    justify-content: left
+
+.tech-stack-list-item
+    display: inline-block
+    background: $secondary-colour
+    color: $primary-colour
+    border-radius: 5px
+    padding: 2px 5px 2px 5px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    max-width: 200px
+    margin-right: 10px
+    font-size: clamp(10px, 2.5vw, 18px)
+    font-weight: bold
+
+p
+    color: $secondary-colour
+    font-weight: bold
+    font-size: clamp(12px, 2vw, 18px)
+    padding-right: 30px
+    overflow-wrap: break-word
+    hyphens: auto
+
+.link-container
+    width: 90%
+    text-align: right
+    margin-top: 40px
+
+
+a
+    color: $hightlight-primary-colour
+    border: 2px solid $secondary-colour
+    border-radius: 5px
+    padding: 10px
+    text-decoration: none
+    font-size: clamp(12px, 2vw, 24px)
+    font-weight: bold
+
+
+@media (max-width: 1400px)
+    .project-container
+        margin-bottom: 200px
+    
+    .project-text-section 
+        flex-basis: 100%
+        padding-bottom: 30px
+
+
+    .project-image-section 
+        flex-basis: 80%
+        text-align: center
+        margin-top: 30px
+        margin-left: auto
+        margin-right: auto
+
+    .project-container:nth-child(1)
+        margin-top: 5px
