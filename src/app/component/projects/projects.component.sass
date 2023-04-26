@@ -20,9 +20,17 @@
 .project-container:nth-child(1)
     margin-top: 200px
 
+.project-container:nth-child(even)
+    flex-direction: row-reverse
+
 .project-text-section 
   flex-basis: 50%
 
+.project-container:nth-child(even) .project-text-section
+    padding: 0
+    box-sizing: border-box
+    padding-left: 20px
+    margin: 0
 
 .project-image-section 
   flex-basis: 50%
