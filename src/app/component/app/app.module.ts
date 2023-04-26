@@ -12,6 +12,9 @@ import { SkillsComponent } from '../skills/skills.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { ContactComponent } from '../contact/contact.component';
 import { ThankyouComponent } from '../thankyou/thankyou.component';
+import { AssemblySimulationVisualizationComponent } from '../projects/assembly-simulation-visualization/assembly-simulation-visualization.component';
+import { CapstoneComponent } from '../projects/capstone/capstone.component';
+import { MsPaintCloneComponent } from '../projects/ms-paint-clone/ms-paint-clone.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { ThankyouComponent } from '../thankyou/thankyou.component';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    ThankyouComponent
+    ThankyouComponent,
+    AssemblySimulationVisualizationComponent,
+    CapstoneComponent,
+    MsPaintCloneComponent
   ],
   imports: [
     BrowserModule,
