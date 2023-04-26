@@ -30,7 +30,11 @@
     <div class="information-container">
         <div class="text-section">
             <h2>Workstation visualization WPF app</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptas reiciendis? Est, odio earum ut repellendus, nemo dolorum fuga impedit officia provident facere eaque blanditiis nobis maiores assumenda a nesciunt?</p>
+            <p>I created a program to visualize what an instance of the console app simulation was doing in real time.  It is launched when a user boots up an instance of the simulation.  It can also be started by providing it the number of a workstation as an argument allowing for the workstation visualization app to be run remotely from the simulation app.
+                <br>
+                <br>
+            The app is presented in the form of an andon display with part counts at a workstation being updated in real time.  Additionally, when a worker requests a part restock, the runner label lights up.  In the case the runner doesn't restock a workers parts before a part count hits zero, the working label will change to waiting and the decrementing of part counts will stop as the worker can't make more fog lamps until the runner restocks any empty part bins.
+            </p>
         </div>
         <div class="image-section">
             <img class="project-gif" src="../../../assets/gifs/workstation_visualization_demo.gif" alt="assembly line simulation/visualization"/>
@@ -40,7 +44,11 @@
     <div class="information-container">
         <div class="text-section">
             <h2>Simulation config WPF app</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui incidunt quod optio officia ipsa ullam, adipisci autem in ut deserunt dignissimos veritatis id hic maiores nesciunt nemo sunt quam libero!</p>
+            <p>I created a simulation config WPF app to update variables within the simulation in real time.  The config app can be run remotely from any of the other apps in the project.  Through the config app, the maximum number of parts a worker starts with/gets restocked with can be updated.  A different value can be given for each part.  The config app can also update the max number of workstations available in the simulation, the speed the three different worker types complete fog lamps/the chance a worker type produces a defective fog lamp, and the base time to complete a fog lamp. On top of this, the config tool allows the time scale of simulation to be updated to one of three modes, real time, default mode (1 minute real time = 1 second sim time), and super speed mode (1 minute real time = 100ms). 
+            <br>
+            <br>
+            If you want or need to return to the default values for the simulation, the config app offers a simulation reset button to return all simulation variables to normal. 
+            </p>
         </div>
         <div class="image-section">
             <img class="project-gif" src="../../../assets/gifs/assembly_line_config_tool_demo.gif" alt="assembly line simulation/visualization"/>
@@ -50,7 +58,11 @@
     <div class="information-container">
         <div class="text-section">
             <h2>Assembly line visualization WPF app</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quia beatae ipsa laborum voluptatum nihil velit recusandae culpa, quas odit voluptatibus tempore a eum optio sequi veritatis blanditiis aliquam. Recusandae.</p>
+            <p>I created an assembly line visualization WPF app to visualize the output from all instances of the simulation program.  The app allows the user to place an order for however many fog lamps they'd like.  This order is only represented within the assembly line visualization app, there is no table or tables in the database to store completed orders or anything like that.  The user placed orders only serve to show completed fog lamp output in real time.
+            <br>
+            <br>
+            The app follows a kanban display style.  A new order starts in the order backlog column.  It moves to the current order column when all orders placed before have been completed.  The in progress column displays 2 pieces of information.  The number in progress which represents the number of workers currently working, the value changes as instances of the sim program stop/start or run out of parts and must wait to be restocked.  The other number represents completed fog lamps that haven't been tested.  These lamps are placed in a pre testing tray, in the simulation, this is a table in the SQL Server database.  Once the number of fog lamps in the pre testing table hits 60, all the lamps will be tested.  The number produced column represents the total number of fog lamps that have been tested after an order has moved to the current order column.  The yield column represents the total number of fog lamps that have passed testing after the after an order has moved to the current order column.  Finally, the completed orders column represents exactly what its' name suggests.
+            </p>
         </div>
         <div class="image-section">
             <img class="project-gif" src="../../../assets/gifs/assembly_line_visualization_demo.gif" alt="assembly line simulation/visualization"/>
@@ -60,7 +72,11 @@
     <div class="information-container">
         <div class="text-section">
             <h2>SQL Server database</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatum ab. Laboriosam tempore, ex exercitationem, dolores labore beatae et fuga necessitatibus, quod ad voluptate vitae ducimus iure aliquam deleniti officiis.</p>
+            <p>The SQL Server database I created for this project has a handful of tables used to support the simulation and its' real time capabilities.  The workstations table stores data about each workstation.  It is how the simulation program knows if a workstation is available, which station to take and how many parts it has available.  The common tray table is used to let the runner know which parts from which workstaion need to be restocked.  The runner is a job that is triggerd when a row is inserted to the common tray table.  The trigger checks if the job is currently running before trying to start the job.
+            <br>
+            <br>
+            The pre testing tray is where workers put completed fog lamps.  Inserting rows to this table is done through a stored procedure which checks the number of rows in the table, if the number is equal to 60, the rows are inserted into the testing table after being assigned a test unit number and being tested using the worker skill level that created each lamp to determine a pass or fail.  The test unit number is of the form FLxxxxxxyy where xxxxxx is a sequentially assigned integer and yy is the fog lamps position in the pre testing tray (1-60).  The testing table is the final resting place for completed fog lamps.  The status column represents defective or working lamps and the time stamp column represents the time the fog lamp completed testing.  The time stamp is used within the assembly line visualization to determine which fog lamps should be used to complete current orders.  Only lamps made after a current order has been placed count towards that orders yield.
+            </p>
         </div>
         <div class="image-section">
             <img class="project-gif" src="../../../assets/images/asql_sim_database_schema.JPG" alt="assembly line simulation/visualization"/>
