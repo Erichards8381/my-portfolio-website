@@ -1,0 +1,23 @@
+<div class="form-container">
+    <h1>Get in touch, I'd love to hear from you!</h1>
+    <form (submit)="setFormSubmittedCookie()" action="https://formsubmit.co/572a643dfd726d039b7884f1b722370b" method="POST">
+        <div class="meta-data-fields-container">
+            <div class="email-fields">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="name-fields">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="John Smith" required>
+            </div>
+        </div>
+        <div class="message-fields">
+            <label for="message">Message For Me</label>
+            <textarea name="message" id="message" placeholder="What you want to say here" required></textarea>
+        </div>
+        
+        <input type="hidden" name="_next" value="http://localhost:4200/thankyou">
+        <button type="submit">Send</button>
+    </form>
+</div>
+

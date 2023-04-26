@@ -1,0 +1,97 @@
+@import '../../../styles.sass'
+
+
+*
+    font-family: 'Montserrat', sans-serif
+    box-sizing: border-box
+
+.form-container
+    width: 100%
+    margin: 50px auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+form
+    display: flex
+    flex-direction: column
+    width: 50%
+
+.meta-data-fields-container
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+.email-fields
+    width: 40%
+    display: inline-block
+    
+
+.name-fields
+    width: 40%
+    display: inline-block
+
+    
+
+.message-fields
+    width: 100%
+    display: inline-block
+    margin-top: 20px
+
+
+label
+    color: $hightlight-primary-colour
+    font-size: clamp(16px, 3vw, 32px)
+
+#message
+    height: 30vh
+    text-align: left
+    font-size: clamp(14px, 3vw, 18px) !important
+    width: 100%
+    background: $primary-colour  
+    margin: 10px 0px 10px 0px
+    padding: 4px
+    resize: none
+
+input, button
+    border-radius: 5px
+    background: $primary-colour    
+    font-size: clamp(16px, 3vw, 32px)
+    padding: 5px
+    margin: 10px 0px 10px 0px
+
+input, #message    
+    color: $secondary-colour
+    border: 3px solid $secondary-colour
+
+input::placeholder, #message::placeholder
+    color: $secondary-colour
+    opacity: .5 
+
+input
+    width: 100%
+    overflow: hidden
+
+button
+    color: $hightlight-primary-colour !important
+    border: 3px solid $secondary-colour
+    max-width: 50%
+    align-self: center
+
+button:hover
+    border: 3px solid $hightlight-primary-colour
+
+input:focus, #message:focus
+    outline: none
+    border: 3px solid $hightlight-primary-colour
+
+h1
+    color: $secondary-colour
+    opacity: 1
+    margin-bottom: 50px
+    font-size: clamp(16px, 4vw, 53px)
+    text-align: center
+    max-width: 80%
+
+

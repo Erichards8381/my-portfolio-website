@@ -335,9 +335,9 @@
                                         "description": "The student, as part of a team, will complete a capstone project that demonstrates skills acquired in previous courses. The project must either address a problem for an external client or demonstrate an innovative solution to a problem chosen by the student. The team will develop a complete software system through the planning, programming, testing, and delivery stages. Both technical and project management skills will be emphasized.",
                                         "hours": 126,
                                         "credits": 9,
-                                        "numeric_grade": 0,
-                                        "alpha_grade": "NA",
-                                        "grade_point": 0
+                                        "numeric_grade": 85,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
                                     },
                                     {
                                         "code": "SENG3090",
