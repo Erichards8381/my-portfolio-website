@@ -1,1 +1,79 @@
-<p>capstone works!</p>
+<div class="wrapper">
+    <h1>Capstone</h1>
+    <div class="information-container">
+        <div class="text-section">
+            <h2>Backstory</h2>
+            <p>This project was an interesting experience.  Students in their final semester of my program at Conestoga College partake in the systems project course where students create teams of 3-4 students and come up with an idea to develop over 10 weeks.  The option to complete a project for an industry partner is also on the table which is what my group elected to do.  Our industry partner was an IoT asset management company called Enertics.  They were under the impression that we had 2 semesters to complete their project.  Discovering this wasn't the case and that we only had 10 weeks made them change the scope of our project.  This is where the problems began. 
+            <br>
+            <br>
+            We were tasked with creating a proof of concept web app that integrated Grafana, a feature rich data visualization tool, with AngularJS, the front end web framework Enertics is currently using.  Enertics wanted to use the web app we created as a guideline for later integrating Grafana to their current website so that their clients would have an improved user experience when viewing dashboards.
+            <br>
+            <br>
+            I believe Enertics gave us a project that wasn't very important to them as they gave us very little information in terms of requirements and no access to any of their resources such as data.It really felt as if the project was an after thought.  For example, we were told to create our own data and call the values X, Y, and Z, as we were told the data didn't matter.  Even something as basic as which tech stack they wanted us to use was unclear, the lack of communication made us question if they wanted AngularJS or Angular.  You may be thinking Angular of course but this would be incorrect, in the end they wanted us to use AngularJS as that's what they were already using. We let them know from day one that the project scope was not large enough to warrant a 4 person team developing it for 10 weeks.  They did not care.  We attempted to set up weekly or bi-weekly meetings only to be ghosted.  Our contacts at Enertics then went on a 6 week business trip to India and let us know that they wouldn't answer our emails while they were away.  We essentially developed the entire project without any feedback and with vague requirements.  In the end, we managed to set up a meeting with them to showcase our final product and they were happy with what we created.
+        </p>
+        </div>
+        <div class="image-section">
+            <img class="project-gif" src="../../../assets/gifs/capstone_demo.gif" alt="assembly line simulation/visualization"/>
+        </div>
+    </div>
+
+    <div class="information-container">
+        <div class="text-section">
+            <h2>What I learned</h2>
+            <p>Despite the smaller project scope and an absent industry partner, I did learn a lot.
+            <br>
+            <br>
+            I hadn't used Grafana before this project so I learned things like anonymous user mode, creating Grafana API keys with admin access and how to use Grafana's API to create dashboards/update panels.  AngularJS was also new to me.  I learned AngularJS's way of using controllers, injecting services and more.  Being forced to use a deprecated framework gave me a greater appreciation of modern frameworks.
+            <br>
+            <br>
+            Additionally, I had to dive into OAuth 2.0 as the method of using Google single sign-on in AngularJS had become deprecated and no longer worked.  I had to create a solution based on Google's new implementation of single sign-on for which there weren't any great relevant tutorials.  This forced me to have a better understanding of OAuth 2.0's flow. I also familirized myself with Express JS as before this project I had only used it once or twice.  I learned about middleware as I created a function to authenticate/authorize incoming requests before executing routes.  I also practiced making http requests as I needed to handle several use cases relating to interfacing with Grafana's API.
+            <br>
+            <br>
+            Looking beyond more technical skills, I got to work with an industry partner which gave me practice in gathering requirements.  As my groups industry partner seemingly forgot about us I also got a taste of the real world as clients won't always be great.  I got to practice using Azure boards to plan and execute one week long sprints over the ten week development period.  Furthermore, I created weekly reports throughtout the project and met with a panel of mentors each week to discuss the project. 
+            </p>
+        </div>
+        <div class="image-section">
+            <img class="project-gif" src="../../../assets/images/learning.png" alt="assembly line simulation/visualization"/>
+        </div>
+    </div>
+
+    <h1>Project Breakdown</h1>
+    <div class="information-container">
+        <div class="text-section">
+            <h2>Front end</h2>
+            <p>
+                My group used Angular JS to create a front end that allows users to sign in and view data associated with the fake motors that they own.  Users can select date ranges using date pickers to view different chunks of data as well as view different types of data visualizations.
+            </p>
+        </div>
+        <div class="image-section">
+            <img class="project-gif" src="../../../assets/gifs/capstone_demo.gif" alt="assembly line simulation/visualization"/>
+        </div>
+    </div>
+
+    <div class="information-container">
+        <div class="text-section">
+            <h2>Backend</h2>
+            <p>
+                My group created the backend using Express JS, MySQL and Grafana.  The user sends various requests to Express JS which depending on the request will query the database to gather information about the devices a user owns or will make api calls to Grafana in order to update the data in a panel that is embeded in the front end.  In some cases, a dashboard may not exist, in this case, express js will use a Grafana API key with admin privileges to create a new dashboard via the Grafana API.
+            </p>
+        </div>
+        <div class="image-section">
+            <img class="project-gif" src="../../../assets/images/backend_architecture.png" alt="assembly line simulation/visualization"/>
+        </div>
+    </div>
+
+    <div class="information-container">
+        <div class="text-section">
+            <h2>Data</h2>
+            <p>
+            My group was told by our industry partner to create some scripts to generate large amounts of dummy data to load into the Grafana panels that mimics what their data looks like as they wouldn't be giving us access to their database.  We gathered that Enertics IoT asset monitoring devices output readings every 2 minutes.  Additionally, Enertics was founded in 2018 so we wanted to have data dating back to 2018.  As such, I wrote a C# program that queries the database for the date each device was registered (fake dates).  This date acts as the start date for the program, the end date is the time the program is run.  The program then generates random values for each data column (X, Y, Z) for a given device.  The data is inserted to the database in 50,000 row blocks to reduce the number of inserts being done.  Once an entire devices history of data has been generated and inserted to the database, the program moves on to the next device and repeats the process until every device has data.  Inserting data in this manor makes querying the database very slow.  As such, we created indexes to work around this.
+            <br>
+            <br>
+            We also wanted to mimic the real time nature of Enertics asset monitoring devices so we created a python script that we installed as a service that generates data for each active device every 2 minutes. 
+            </p>
+        </div>
+        <div class="image-section">
+            <img class="project-gif" src="../../../assets/images/ones_and_zeros.jpg" alt="assembly line simulation/visualization"/>
+        </div>
+    </div>
+</div>
