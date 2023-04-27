@@ -6,12 +6,12 @@
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    width: 80%
+    width: min(80%, 2000px)
     
 .intro-small-text
     color: $secondary-colour
     z-index: 0
-    font-size: 3vw
+    font-size: min(4vw, 48px)
     font-family: 'Montserrat', sans-serif
     width: 100%
     white-space: nowrap
@@ -37,7 +37,7 @@
 .intro-big-text
     color: $hightlight-primary-colour
     font-family: 'Press Start 2P', cursive
-    font-size: 4.8vw
+    font-size: min(5vw, 128px)
     z-index: 0
     opacity: 0
     animation: fadeIn 2s ease-in-out forwards
