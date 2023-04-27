@@ -15,6 +15,7 @@ import { ThankyouComponent } from '../thankyou/thankyou.component';
 import { AssemblySimulationVisualizationComponent } from '../projects/assembly-simulation-visualization/assembly-simulation-visualization.component';
 import { CapstoneComponent } from '../projects/capstone/capstone.component';
 import { MsPaintCloneComponent } from '../projects/ms-paint-clone/ms-paint-clone.component';
+import { FullScreenImageDirective } from 'src/app/directives/full-screen-image.directive';
 
 @NgModule({
   declarations: [
@@ -29,12 +30,13 @@ import { MsPaintCloneComponent } from '../projects/ms-paint-clone/ms-paint-clone
     ThankyouComponent,
     AssemblySimulationVisualizationComponent,
     CapstoneComponent,
-    MsPaintCloneComponent
+    MsPaintCloneComponent,
+    FullScreenImageDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

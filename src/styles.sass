@@ -18,3 +18,28 @@ body
 
 .highlight-text
     color: $hightlight-primary-colour
+
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar
+  width: 10px
+  height: 10px
+
+
+/* Set the color and opacity of the scrollbar track */
+::-webkit-scrollbar-track
+  background-color: transparent
+  opacity: 0.5
+
+
+/* Set the color and opacity of the scrollbar thumb */
+::-webkit-scrollbar-thumb 
+  background-color: $secondary-colour
+  opacity: 0.5
+  border-radius: 5px
+
+
+/* Set the color and opacity of the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover
+  background-color: $hightlight-primary-colour
+  opacity: 1
+

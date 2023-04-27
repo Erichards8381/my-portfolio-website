@@ -1,0 +1,66 @@
+@import './styles.sass'
+
+*
+    font-family: 'Montserrat', sans-serif
+
+.wrapper
+    width: 90%
+    margin: 50px auto 0 auto
+    text-align: center
+
+.information-container
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 150px 0
+
+.information-container:nth-child(odd)
+    flex-direction: row-reverse
+
+.information-container:nth-child(odd) .text-section
+    padding: 0 0 0 20px
+
+.text-section
+    flex-basis: calc(50% - 20px)
+    padding-right: 20px
+    text-align: left
+
+.image-section
+    flex-basis: 50%
+
+.project-gif
+    width: 100%
+    height: auto
+    border-radius: clamp(5px, 1vw, 30px)
+
+h1
+    color: $hightlight-primary-colour
+    font-size: clamp(24px, 3vw, 52px)
+
+h2
+    color: $hightlight-primary-colour
+    font-size: clamp(20px, 3vw, 42px)
+
+p
+    color: $secondary-colour
+    font-weight: bold
+
+@media (max-width: 1400px)
+    .information-container
+        margin-bottom: 200px
+    
+    .text-section 
+        flex-basis: 100%
+        padding-bottom: 30px
+
+
+    .image-section 
+        flex-basis: 80%
+        text-align: center
+        margin-top: 30px
+        margin-left: auto
+        margin-right: auto
+
+    .information-container:nth-child(1)
+        margin-top: 5px
