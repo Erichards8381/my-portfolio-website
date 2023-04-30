@@ -22,7 +22,7 @@ export class EducationComponent implements OnInit{
   constructor(private http: HttpClient) {}
 
   ngOnInit(){
-    this.http.get<any>('assets/data/grades.json').subscribe(data => {
+    this.http.get<any>('./assets/data/grades.json').subscribe(data => {
       this.jsonData = data.semester;
     })
   }
