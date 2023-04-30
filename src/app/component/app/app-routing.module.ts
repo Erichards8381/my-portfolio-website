@@ -11,7 +11,7 @@ import { CapstoneComponent } from '../projects/capstone/capstone.component';
 import { MsPaintCloneComponent } from '../projects/ms-paint-clone/ms-paint-clone.component';
 
 const routes: Routes = [
-  {path:'/', component:HomeComponent},
+  {path:'', component:HomeComponent},
   {path:'education', component:EducationComponent},
   {path:'skills', component: SkillsComponent},
   {path:'projects', component: ProjectsComponent},
