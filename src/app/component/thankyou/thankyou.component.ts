@@ -13,6 +13,7 @@ export class ThankyouComponent {
   }
 
   ngOnInit(): void {
+    console.log('Hello from thankyou component')
     const contactFormSubmitted = localStorage.getItem('contactFormSubmitted') || document.cookie.includes('contactFormSubmitted=true')
 
     if (!contactFormSubmitted) {
