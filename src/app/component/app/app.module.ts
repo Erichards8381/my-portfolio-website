@@ -38,7 +38,7 @@ import { FullScreenImageDirective } from 'src/app/directives/full-screen-image.d
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
