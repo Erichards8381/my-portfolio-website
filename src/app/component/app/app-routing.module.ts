@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:'skills', component: SkillsComponent},
   {path:'projects', component: ProjectsComponent},
   {path:'contact', component: ContactComponent},
-  {path:'thankyou', component: ThankyouComponent},
+  {path:'my-portfolio-website/thankyou', component: ThankyouComponent},
   {path:'projects/assembly-simulation-visualization', component: AssemblySimulationVisualizationComponent},
   {path:'projects/capstone', component:CapstoneComponent},
   {path:'projects/ms-paint-clone', component:MsPaintCloneComponent}
