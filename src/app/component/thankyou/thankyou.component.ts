@@ -17,7 +17,7 @@ export class ThankyouComponent {
     const contactFormSubmitted = localStorage.getItem('contactFormSubmitted') || document.cookie.includes('contactFormSubmitted=true')
     console.log(contactFormSubmitted)
     if (!contactFormSubmitted) {
-      this.router.navigateByUrl('/my-portfolio-website/')
+      this.router.navigateByUrl('')
     }
     else{
       localStorage.removeItem('contactFormSubmitted');
