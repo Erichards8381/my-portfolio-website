@@ -1,0 +1,366 @@
+{
+    "semester": 
+                [
+                    {
+                        "level": "Level One",
+                        "courses": [
+                                    {
+                                        "code": "COMM1085",
+                                        "name": "College Reading & Writing Skills",
+                                        "description": "This course introduces students to the reading, writing, and critical thinking skills needed for academic and workplace success. Students will analyse a variety of texts and apply the steps of planning, writing, and revising to produce writing that meets the expectations of selected audiences and purposes. The course prepares students for college-level writing tasks, research, and documentation by asking them to produce clear, informed, and purposeful documents relevant to both academic and professional contexts.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 84,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "PROG1350",
+                                        "name": "Software Engineering Fundamentals",
+                                        "description": "Standard software development methodologies, testing methodologies, and software maintenance topics will be covered to prepare students for real life software development. The course will emphasize proper software design, software development issues, and documentation. The importance of effective software engineering documentation and effective technical communications are stressed. Topics include analyzing, collecting and writing effective requirements using traditional and Agile techniques, enforcing system and software quality through testing, concepts of troubleshooting and debugging techniques and software maintenance issues.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 93,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    },
+                                    {
+                                        "code": "PROG1596",
+                                        "name": "Operating System Fundamentals",
+                                        "description": "This course provides the student with exposure to operating system (OS) fundamentals from a technical viewpoint. Topics include setup and configuration of an OS and several services, network fundamentals, file systems, and command line operations. By learning advanced techniques in OS usage and some of the related issues, the student is introduced to many of the functions and features that will be built or interfaced to in subsequent programming courses.",
+                                        "hours": 70,
+                                        "credits": 5,
+                                        "numeric_grade": 74,
+                                        "alpha_grade": "B",
+                                        "grade_point": 3
+                                    },
+                                    {
+                                        "code": "SENG1000",
+                                        "name": "C/C++ Programming",
+                                        "description": "This course introduces software design and implementation, focusing on using the C language. Elements of C++ will also be introduced. Topics include: algorithm design, modular code design, programming style, functions, arrays, pointers, strings, data structures, and file I/O. An emphasis is placed on proper design to produce maintainable software.",
+                                        "hours": 70,
+                                        "credits": 5,
+                                        "numeric_grade": 73,
+                                        "alpha_grade": "B",
+                                        "grade_point": 3
+                                    },
+                                    {
+                                        "code": "SENG1010",
+                                        "name": "User Interface Fundamentals",
+                                        "description": "This course provides the student with knowledge of the principles involved in creating effective user interfaces. Techniques for proper design, implementation, and evaluation will be explored through the critique of existing applications and websites, and the use of mock-up and wire framing tools to prototype UI design concepts.",
+                                        "hours": 28,
+                                        "credits": 2,
+                                        "numeric_grade": 73,
+                                        "alpha_grade": "B",
+                                        "grade_point": 3
+                                    }
+                                ]
+                    },
+                    {
+                        "level": "Level Two",
+                        "courses": [
+                                    {
+                                        "code": "INFO1340",
+                                        "name": "Computer Security",
+                                        "description": "This course covers the practical and ethical aspects of modern computer security. A wide variety of topics will be covered. An emphasis will be placed on examining and analyzing common application security issues. The legal and ethical aspects of computer security and privacy will also be examined.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 80,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "PROG1150",
+                                        "name": "Systems Analysis and Design",
+                                        "description": "Upon completion of this course, the student will be able to explain the various steps in the Systems Development Life Cycle (SDLC). This course focuses on both the Analysis and Design phases of the life cycle. Both traditional and Agile (using the Unified Modeling Language (UML)) approaches will be reviewed. As alternatives to the SDLC, several development methodologies will be examined and compared.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 80,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "PROG1385",
+                                        "name": "Object-oriented Programming",
+                                        "description": "This course will expand programming knowledge by learning C++. Topics include the concept of an object, including information hiding, inheritance, class declarations, member data and functions, interfaces, function and operator overloading, inheritance, templates, etc.",
+                                        "hours": 56,
+                                        "credits": 4,
+                                        "numeric_grade": 74,
+                                        "alpha_grade": "B",
+                                        "grade_point": 3
+                                    },
+                                    {
+                                        "code": "SENG1040",
+                                        "name": "Computer Architecture and Machine Language",
+                                        "description": "This course introduces the student to principles and techniques of digital systems and design including numbering systems, basic logic functions, Boolean expressions, truth tables, and combination logic circuits. Students will be introduced to programming simple 8-bit microcontrollers. The course serves to provide a basis from which the student can build a working knowledge of digital design and microcomputer and microcontroller based systems.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 87,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "SENG1050",
+                                        "name": "Data Structures",
+                                        "description": "This course examines the use and implementation of advanced data structures to improve speed and storage efficiency. Common algorithms are discussed. The C++ Standard Template Library is introduced.",
+                                        "hours": 56,
+                                        "credits": 4,
+                                        "numeric_grade": 90,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    },
+                                    {
+                                        "code": "LIBS1950",
+                                        "name": "Thinking Through Zombies",
+                                        "description": "This course explores how humans the meaning of the undead. The course begins with asking what zombies’ popularity reflects about our culture and civilization. Readings, films and discussions will focus on critical evaluation and reflection about the zombie trope that include lessons about racism, slavery, anxiety about the body, cannibalism, genocide, panic and plague, gender, war and social-economic structures. Students will have the opportunity to explore in depth contemporary and historical representations of zombies, and to develop a conclusion about the significance of those representations in the search for meaning.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 92,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    }
+                                ]
+                    },
+                    {
+                        "level": "Level Three",
+                        "courses": [
+                                    {
+                                        "code": "PROG2001",
+                                        "name": "Web Design and Development",
+                                        "description": "This course will familiarize the student with the use of web servers in the development of applications using dynamic web pages. Students begin by using HTML and Javascript before being introduced to several server side technologies (including CGI, ASP, PHP and ASP.NET). Proper web design principles will be discussed including the use of Cascading Style Sheets (CSS). In addition, the student will be introduced to AJAX and jQuery as a way of efficiently updating portions of a web page.",
+                                        "hours": 56,
+                                        "credits": 4,
+                                        "numeric_grade": 80,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "PROG2111",
+                                        "name": "Relational Databases",
+                                        "description": "This course discusses the fundamentals of relational database management systems (RDBMS). Custom relational database applications are created by modelling solutions and implementing them using Structured Query Language (SQL).",
+                                        "hours": 56,
+                                        "credits": 4,
+                                        "numeric_grade": 95,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    },
+                                    {
+                                        "code": "PROG2121",
+                                        "name": "Windows and Mobile Programming",
+                                        "description": "This course introduces the students to various aspects of Microsoft Windows programming, beginning with the Windows Win32 Application Programming Interface (API). The focus of the course quickly shifts to the C# programming language and the .NET Framework. Topics include: WPF (Windows Presentation Foundation), application deployment, .NET data structures, threaded solutions, inter-process communication, and an introduction to development in Azure.",
+                                        "hours": 70,
+                                        "credits": 5,
+                                        "numeric_grade": 91,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    },
+                                    {
+                                        "code": "SENG2010",
+                                        "name": "Microprocessors And Embedded Systems",
+                                        "description": "This course has an emphasis on microprocessor programming and assembly language programming. The student designs and implements embedded applications for dedicated hardware platforms. Topics include CPU concepts (registers, address bus, data bus, RAM/ROM, program counter, stack pointer, interrupts), input/output mechanisms, machine data types, basic assembly language programming, timers and interrupt sources.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 88,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "SENG2020",
+                                        "name": "Software Quality",
+                                        "description": "This course will extend the knowledge learned in Software Engineering Fundamentals. There will be an emphasis on project management, revision control, and testing. Students combine and apply these fundamentals to a major course project to iteratively measure and improve the quality of their solution.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 75,
+                                        "alpha_grade": "B+",
+                                        "grade_point": 3.5
+                                    },
+                                    {
+                                        "code": "LIBS1095",
+                                        "name": "Artificial Intelligence: Rise of the Machines",
+                                        "description": "Have you ever wondered if humans will eventually fall in love with robots? Do you question what robots think about when they are alone or if robots will eventually be able to dream? Do you worry that we may face a future of robotic soldiers and unmanned war machines? All of these questions are related to the field of artificial intelligence. Artificial intelligence (AI) is defined as the theory and development of computer systems able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision-making, and translation between languages. In this course, you will be introduced to artificial intelligence and how it impacts or will impact both individuals and society in general. We will learn about the history and definition of intelligence and artificial intelligence, and real life applications and possible implications of AI, and will explore beliefs about AI and what the future holds for both humans and artificial machines. Emphasis will be placed on understanding the moral and ethical implications of AI.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 92,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    }
+                                ]
+                    },
+                    {
+                        "level": "Level Four",
+                        "courses": [
+                                    {
+                                        "code": "INFO2231",
+                                        "name": "Advanced Computer Security",
+                                        "description": "This course extends the topics covered in INFO1340 Computer Security which covered the practical and ethical aspects of -modern computer security. Advanced Computer Security emphasizes the hands-on skills and knowledge required to conduct, and thus defend from, a variety of attacks through the framework of penetration testing. Students recreate attack scenarios in an isolated lab, and then study effective countermeasures. Discussion-style seminars throughout the course will reinforce the techniques used in-lab, and will review emerging security issues in the real world.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 85,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "MATH2420",
+                                        "name": "Math for Software Development",
+                                        "description": "This course focuses on the application of mathematical techniques to analyze and solve fundamental engineering problems. Topics covered include: basic algebraic operations, analytic geometry, functions and graphs, trigonometric functions, systems of linear equations, vectors, exponents and radicals, exponential functions, determinants and matrices, sequences and statistics.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 97,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    },
+                                    {
+                                        "code": "PROG3150",
+                                        "name": "Mobile Application Development",
+                                        "description": "This course exposes the student to the frameworks and architectures used in Mobile Application Development. The student will demonstrate the ability to build both native and web-based software solutions on a current mobile platform that incorporates data management, security and available services. Emphasis will be placed on performance, network reliability, deployment, testing and debugging.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 70,
+                                        "alpha_grade": "B",
+                                        "grade_point": 3
+                                    },
+                                    {
+                                        "code": "SENG2030",
+                                        "name": "System Programming",
+                                        "description": "This course introduces the student to the Linux Operating System. Linux architecture and task management will be covered. Industry-standard multitasking concepts, inter-process communication, threading and socket-level programming are presented. Students have the opportunity to develop system solutions using all concepts discussed in the course.",
+                                        "hours": 56,
+                                        "credits": 4,
+                                        "numeric_grade": 84,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "SENG2040",
+                                        "name": "Network Application Development",
+                                        "description": "This course examines the concepts of full-stack network application development. Students are introduced to multiple server and client side technologies used in the development of complex network applications. Network application architecture is discussed, as are security concerns. The course culminates in the development of an internet accessible full-stack network application.",
+                                        "hours": 70,
+                                        "credits": 5,
+                                        "numeric_grade": 90,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    },
+                                    {
+                                        "code": "LIBS1103",
+                                        "name": "Cults and Terrorism",
+                                        "description": "In this course, students will explore the historical evolution and social impact of cults and terrorist groups. Students will learn ways to identify and define cults. Using discussions and active learning approaches, students will examine what motivates cults and terrorist groups with a specific lens towards violent activity. The impact of media and globalization will also be discussed. Students will advance their social and cultural understanding and gain awareness of the place of cults in contemporary society. Students in this course will discuss the validity of historical evidence and research historical interpretations of events using relevant and recent sources.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 82,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    }
+                                ]
+                    },
+                    {
+                        "level": "Level Five",
+                        "courses": [
+                                    {
+                                        "code": "SENG3020",
+                                        "name": "Advanced Software Quality",
+                                        "description": "Extended techniques to scope, develop and measure improvements to the quality of software development projects are investigated and applied in this course. Students will learn to enhance their outcomes along these lines through the proper evaluation, selection and use of tool sets such as conformance testing, continuous integration and the selection of a tool-chain that meets the needs of an advanced level software development project.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 82,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "SENG3030",
+                                        "name": "Internet of Things",
+                                        "description": "This course examines the foundations of the Internet of Things. Communications, security, data aggregation and storage are addressed. Students will extend their understandings of protocols and user interfaces to analyze and design IoT applications.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 91,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    },
+                                    {
+                                        "code": "SENG3040",
+                                        "name": "Graphics, Animation and Sound",
+                                        "description": "This course introduces the student to the fundamentals of programming object-oriented, state machine style programs that manipulate graphics, conduct procedural animation, and manipulate audio resources to deliver scalable, multimedia applications. Current technologies are used to drive basic animation techniques, multimedia services, and interactive GUI capabilities.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 93,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    },
+                                    {
+                                        "code": "STAT3000",
+                                        "name": "Applied Statistics",
+                                        "description": "This course is an introduction to concepts in probability and statistics.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 83,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "SENG2040",
+                                        "name": "Mobile Application Development II",
+                                        "description": "In this course, the student will learn the fundamental skills for creation of apps for Apple mobile devices. Apps will be developed for deployment on iPhone and iPad devices, using common Apple development standards.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 85,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "PROG3070",
+                                        "name": "Advanced SQL",
+                                        "description": "SQL concepts that go beyond those learned in Relational Databases are covered. Topics to be covered include indexes, stored procedures, transaction handling, programming abstractions, performance optimization and database maintenance.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 92,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    }
+                                ]
+                    },
+                    {
+                        "level": "Level Six",
+                        "courses": [
+                                    {
+                                        "code": "PROG3126",
+                                        "name": "Advanced Technology Topics",
+                                        "description": "The software development industry evolves at a very rapid pace. This course is primarily student driven and lets them research, prepare and present lessons in technical areas that are current and not yet taught in the program. Instructor led topics relate to parallel processing, application performance improvement and NoSQL databases.",
+                                        "hours": 56,
+                                        "credits": 4,
+                                        "numeric_grade": 93,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    },
+                                    {
+                                        "code": "PROG3221",
+                                        "name": "Systems Project",
+                                        "description": "The student, as part of a team, will complete a capstone project that demonstrates skills acquired in previous courses. The project must either address a problem for an external client or demonstrate an innovative solution to a problem chosen by the student. The team will develop a complete software system through the planning, programming, testing, and delivery stages. Both technical and project management skills will be emphasized.",
+                                        "hours": 126,
+                                        "credits": 9,
+                                        "numeric_grade": 85,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "SENG3090",
+                                        "name": "Performance, Instrumentation, and Optimization",
+                                        "description": "Good software engineering implies well-performing computer solutions. The student will use various tools to demonstrate performance monitoring through instrumentation. Topics like data logging, code tracing, advanced debugging, memory cacheing and performance counters will be explored to demonstrate how computer code can be analyzed and optimized.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 80,
+                                        "alpha_grade": "A",
+                                        "grade_point": 3.75
+                                    },
+                                    {
+                                        "code": "SENG3120",
+                                        "name": "Business Intelligence",
+                                        "description": "Successful businesses in today’s high-tech environment use business intelligence to gain a competitive advantage. This course introduces some of the methodologies and technologies used in the analysis of large amounts of historic data. Topics covered include data visualization, data warehousing, online analytical processing and data mining. Practical use of these technologies are presented in the context of descriptive, predictive and prescriptive analytics.",
+                                        "hours": 42,
+                                        "credits": 3,
+                                        "numeric_grade": 95,
+                                        "alpha_grade": "A+",
+                                        "grade_point": 4
+                                    }
+                                ]
+                    }
+
+                ]
+}
