@@ -11,15 +11,15 @@ import { CapstoneComponent } from '../projects/capstone/capstone.component';
 import { MsPaintCloneComponent } from '../projects/ms-paint-clone/ms-paint-clone.component';
 
 const routes: Routes = [
-  {path:'#/', component:HomeComponent},
-  {path:'#/education', component:EducationComponent},
-  {path:'#/skills', component: SkillsComponent},
-  {path:'#/projects', component: ProjectsComponent},
-  {path:'#/contact', component: ContactComponent},
-  {path:'#/thankyou', component: ThankyouComponent},
-  {path:'#/projects/assembly-simulation-visualization', component: AssemblySimulationVisualizationComponent},
-  {path:'#/projects/capstone', component:CapstoneComponent},
-  {path:'#/projects/ms-paint-clone', component:MsPaintCloneComponent}
+  {path:'', component:HomeComponent},
+  {path:'education', component:EducationComponent},
+  {path:'skills', component: SkillsComponent},
+  {path:'projects', component: ProjectsComponent},
+  {path:'contact', component: ContactComponent},
+  {path:'thankyou', component: ThankyouComponent},
+  {path:'projects/assembly-simulation-visualization', component: AssemblySimulationVisualizationComponent},
+  {path:'projects/capstone', component:CapstoneComponent},
+  {path:'projects/ms-paint-clone', component:MsPaintCloneComponent}
 ];
 
 @NgModule({
