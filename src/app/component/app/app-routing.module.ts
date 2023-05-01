@@ -9,6 +9,7 @@ import { ThankyouComponent } from '../thankyou/thankyou.component';
 import { AssemblySimulationVisualizationComponent } from '../projects/assembly-simulation-visualization/assembly-simulation-visualization.component';
 import { CapstoneComponent } from '../projects/capstone/capstone.component';
 import { MsPaintCloneComponent } from '../projects/ms-paint-clone/ms-paint-clone.component';
+import { AboutComponent } from '../about/about.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'thankyou', component: ThankyouComponent},
   {path:'projects/assembly-simulation-visualization', component: AssemblySimulationVisualizationComponent},
   {path:'projects/capstone', component:CapstoneComponent},
-  {path:'projects/ms-paint-clone', component:MsPaintCloneComponent}
+  {path:'projects/ms-paint-clone', component:MsPaintCloneComponent},
+  {path:'about', component:AboutComponent}
 ];
 
 @NgModule({
