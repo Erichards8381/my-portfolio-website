@@ -1,6 +1,6 @@
 <input type="checkbox" id="toggle">
 <nav>
-    <a class="navbar-brand" routerLink="/">
+    <a class="navbar-brand" routerLink="/" (click)="closeHamburgerMenu()">
     </a>
 
     <label class="navbar-toggler" for="toggle">
@@ -9,7 +9,7 @@
         <span class="bar"></span>
     </label>
 
-    <ul class="nav-list">
+    <ul class="nav-list" (click)="closeHamburgerMenu()">
         <li class="nav-item">
             <a class="nav-link" routerLink="/">| Home</a>
         </li>
