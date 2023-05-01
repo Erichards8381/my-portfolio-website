@@ -20,7 +20,7 @@ export class ThankyouComponent {
     else{
       console.log('contactFormSubmitted cookie value pre removal:', document.cookie);
       localStorage.removeItem('contactFormSubmitted');
-      document.cookie = 'contactFormSubmitted=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+      document.cookie = 'contactFormSubmitted=false; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
       console.log(localStorage.getItem('contactFormSubmitted'))
       console.log(document.cookie.includes('contactFormSubmitted=true'))
       console.log('contactFormSubmitted cookie value post removal:', document.cookie);
