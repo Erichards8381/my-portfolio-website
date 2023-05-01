@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class ContactComponent {
 
   setFormSubmittedCookie() {
-    document.cookie = 'contactFormSubmitted=true;'
+    localStorage.setItem('contactFormSubmitted', 'true');
   }
 }
